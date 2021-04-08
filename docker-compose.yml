@@ -28,6 +28,8 @@ services:
     tty: true
     ports:
       - 3306:3306
+    volumes:
+      - 'db:/var/lib/mysql'
     environment:
       MYSQL_DATABASE: homestead
       MYSQL_USER: homestead
@@ -105,3 +107,6 @@ services:
       - 8025:8025
     networks:
       - laravel
+volumes:
+    db:
+        driver: local
