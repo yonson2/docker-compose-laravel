@@ -13,3 +13,14 @@ After that completes, create a new blank laravel project by running `docker-comp
 Finally, just visit `localhost` on your browser and check that your laravel app is up and running.
 
 You can read more info about all the available exposed commands on this project by heading over to [EXTRA.md](EXTRA.md)
+
+### Setup .env
+For the db to work properly, it is necessary to have the `.env` file setup like this:
+```
+DB_CONNECTION=mysql
+DB_HOST=mysql
+DB_PORT=3306
+DB_DATABASE=homestead
+DB_USERNAME=homestead
+DB_PASSWORD=secret
+```
