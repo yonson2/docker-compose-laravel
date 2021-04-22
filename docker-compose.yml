@@ -21,8 +21,8 @@ services:
     hostname: docker-compose-laravel.test
     networks:
       laravel:    
-          aliases:
-            - docker-compose-laravel.test
+        aliases:
+          - docker-compose-laravel.test
 
   mysql:
     image: mysql:5.7.29
