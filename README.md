@@ -24,3 +24,14 @@ DB_DATABASE=homestead
 DB_USERNAME=homestead
 DB_PASSWORD=secret
 ```
+
+### Local domain
+By default, the app works in `localhost`. To setup a custom domain, configure it in `docker-compose.yml`
+```
+hostname: your-custom-domain.local
+networks:
+  laravel:    
+    aliases:
+      - your-custom-domain.local
+```
+Then, add `127.0.0.1 your-custom-domain.local` to your `hosts` file

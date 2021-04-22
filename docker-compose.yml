@@ -18,8 +18,11 @@ services:
       - redis
       - mysql
       - mailhog
+    hostname: docker-compose-laravel.test
     networks:
-      - laravel
+      laravel:    
+        aliases:
+          - docker-compose-laravel.test
 
   mysql:
     image: mysql:5.7.29
